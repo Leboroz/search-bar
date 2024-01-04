@@ -1,0 +1,9 @@
+<%= text_field_tag "search", nil %>
+<ul>
+  <% @articles.each do |article|%>
+    <li>
+      <h2><%= article.title %></h2>
+      <p><%= article.content %></p>
+    </li>
+  <% end %>
+</ul>
