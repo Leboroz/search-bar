@@ -2,7 +2,7 @@ class CreateSearches < ActiveRecord::Migration[6.0]
   def change
     create_table :searches do |t|
       t.string :content
-      t.integer :quantity
+      t.integer :quantity, default: 1
       t.references :user, null: false, foreign_key: true
 
       t.timestamps

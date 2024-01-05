@@ -1,6 +1,7 @@
 class ArticlesController < ApplicationController
+  before_action :set_user
+
   def index
-    @user = request.remote_ip
     @articles = Article.all
   end
 end

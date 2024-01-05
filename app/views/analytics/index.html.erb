@@ -1,2 +1,14 @@
-<h1>Analytics#index</h1>
-<p>Find me in app/views/analytics/index.html.erb</p>
+<section class="container analytics">
+  <div>
+    <h1 class="display-1">Top 10 Searches</h1>
+    <ul class="search-list">
+      <% @searches.each do |search|%>
+        <li class="search-list-item">
+          <%= search.content %>
+          <span>Searched <%= "#{search.quantity} #{search.quantity > 1 ? 'times' : 'time'}" %> </span>
+        </li>
+      <% end %>
+    </ul>
+  </div>
+ <div id="chart"></div>
+</section>
