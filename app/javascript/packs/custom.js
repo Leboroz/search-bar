@@ -15,6 +15,7 @@ window.addEventListener('load', () => {
     clearTimeout(timeOut)
     timeOut = setTimeout(() => {
       if (content && alphabetKeys) {
+        //TODO: finish suggestions for the user
         // fetch('/searches/', {
         //   method: 'POST',
         //   headers: {

@@ -2,6 +2,6 @@ class AnalyticsController < ApplicationController
   before_action :set_user
 
   def index
-    @searches = Search.where(user: @user).order(:quantity)
+    @searches = Search.where(user: @user).order(:quantity).limit(10)
   end
 end

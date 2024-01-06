@@ -7,13 +7,16 @@ class SearchesController < ApplicationController
   end
 
   def create
+    user = User.find_by(ip: request.remote_ip)
+    return unless user
+
     content = searches_params[:content]
     splited_content = content.split ' '
     search = Search.find_by(content: content)
-    search.increment_quantity if search
+    search&.increment_quantity if search
 
     splited_content.each do |slice|
-      searches = Search.where(['user_id = ? AND content LIKE ?', @user.id, "%#{slice}%"]).order(:content).to_a
+      searches = Search.where(['user_id = ? AND content LIKE ?', user.id, "%#{slice}%"]).order(:content).to_a
       searches.each do |s|
         Search.destroy(s.id) if content.include?(s.content) && content != s.content
       end
@@ -23,6 +26,7 @@ class SearchesController < ApplicationController
 
     @search = Search.new(content: searches_params[:content], user: @user, quantity: 1)
     @search.save
+    render json: @search
   end
 
   private
