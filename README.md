@@ -18,8 +18,8 @@ In order to work on this project, you need to have the following dependencies in
 ### Clone this repository
 
 ```bash
-$ git clone git@github.com:JohnFTitor/my_recipe_app.git
-$ cd my_recipe_app
+$ git clone git@github.com:Leboroz/search-bar.git
+$ cd search-bar
 ```
 
 ### Commands to run
