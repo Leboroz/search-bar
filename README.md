@@ -8,7 +8,7 @@
 
 ### Requirements
 In order to work on this project, you need to have the following dependencies installed: 
-
+- Git
 - [Ruby 3.0.0](https://www.ruby-lang.org/en/) 
 - [Postgresql at least 9.3](https://www.postgresql.org/)
 - [Node.js 14.21.3](https://nodejs.org/en/)
