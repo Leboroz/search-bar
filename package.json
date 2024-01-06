@@ -10,7 +10,8 @@
     "turbolinks": "^5.2.0"
   },
   "engines": {
-    "node": "14.x"
+    "node": "14.21.3",
+    "yarn": "1.22.19"
   },
   "version": "0.1.0",
   "devDependencies": {
