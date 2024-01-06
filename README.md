@@ -10,7 +10,7 @@
 In order to work on this project, you need to have the following dependencies installed: 
 
 - [Ruby 3.0.0](https://www.ruby-lang.org/en/) 
-- [Postgresql 9.3 and up](https://www.postgresql.org/)
+- [Postgresql at least 9.3](https://www.postgresql.org/)
 - [Node.js 14.21.3](https://nodejs.org/en/)
 - [Yarn](https://yarnpkg.com/)
 - [Rails 6.0.6](https://rubyonrails.org/)
@@ -20,8 +20,8 @@ In order to work on this project, you need to have the following dependencies in
 ### Clone this repository
 
 ```bash
-$ git clone git@github.com:JohnFTitor/my_recipe_app.git
-$ cd my_recipe_app
+$ git clone git@github.com:Leboroz/search-bar.git
+$ cd search-bar
 ```
 
 ### Commands to run
