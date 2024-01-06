@@ -3,9 +3,11 @@
 ## Search bar
 
 ## Preview
+[loom video](https://www.loom.com/share/c35dbdc6cb3241c5a89fb215c93543f1?sid=f3f054fd-9d7a-4bf8-9b74-bb859f9e046a)
 
 ### Requirements
 In order to work on this project, you need to have the following dependencies installed: 
+
 
 - [Ruby 3.0.0](https://www.ruby-lang.org/en/) 
 - [Postgresql 9.3 and up](https://www.postgresql.org/)
