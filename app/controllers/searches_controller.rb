@@ -3,7 +3,7 @@ class SearchesController < ApplicationController
   before_action :set_user
 
   def index
-    render json: Search.where(user: @user).order(:quantity)
+    render json: Search.where(user: @user).order(:quantity, :desc)
   end
 
   def create
