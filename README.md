@@ -1,14 +1,15 @@
 ![](https://img.shields.io/static/v1?label=BY&message=Leonardo&color=purple)
 
-## Search bar
+# Search bar
 
 ## Live [here](https://murmuring-peak-63963-1b7075489e61.herokuapp.com/)
 
 ## Preview
+[Loom Video](https://www.loom.com/share/c35dbdc6cb3241c5a89fb215c93543f1?sid=f3f054fd-9d7a-4bf8-9b74-bb859f9e046a)
 
 ### Requirements
 In order to work on this project, you need to have the following dependencies installed: 
-- Git
+- [Git](https://git-scm.com/)
 - [Ruby 3.0.0](https://www.ruby-lang.org/en/) 
 - [Postgresql at least 9.3](https://www.postgresql.org/)
 - [Node.js 14.21.3](https://nodejs.org/en/)
