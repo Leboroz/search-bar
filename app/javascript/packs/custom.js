@@ -2,7 +2,6 @@ window.addEventListener('load', () => {
   const articlesContainer = document.querySelector('#articles')
   const articles = Array.of(articlesContainer.children)
   const searchBar = document.querySelector('#search')
-  // const searches = document.querySelector('#searches')
 
   //TODO: enhance security 
   const csrfToken = document.querySelector('meta[name="csrf-token"]').getAttribute('content')
@@ -16,23 +15,6 @@ window.addEventListener('load', () => {
     timeOut = setTimeout(() => {
       if (content && alphabetKeys) {
         //TODO: finish suggestions for the user
-        // fetch('/searches/', {
-        //   method: 'POST',
-        //   headers: {
-        //     'Content-Type': 'application/json',
-        //     'X-CSRF-Token': csrfToken,
-        //   },
-        //   body: JSON.stringify({ content })
-        // })
-        //   .then(res => res.json())
-        //   .then(json => {
-        //     // searches.innerHTML = ''
-        //     // searches.append(...json.map(search => {
-        //     //   const li = document.createElement('li')
-        //     //   li.innerHTML = search.content
-        //     //   return li
-        //     // }))
-        //   })
         fetch('/searches/create', {
           method: 'POST',
           headers: {
